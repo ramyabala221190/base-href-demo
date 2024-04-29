@@ -1,0 +1,9 @@
+services:
+  base-href-demo:
+     container_name: testing-base-href-container
+     image: testing-base-href
+     build:
+       context: ./
+       dockerfile: Dockerfile
+     ports:
+       - 8081:80
